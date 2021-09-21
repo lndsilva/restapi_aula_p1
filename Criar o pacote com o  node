@@ -1,0 +1,40 @@
+Criar o pacote com o  node
+
+mpn init -y
+
+
+instalar o pacote json-server
+
+github.com/json=server
+
+npm install json-server
+
+
+npm start
+
+1ª configuração no packege.json para iniciar o servidor
+
+{
+  "name": "restapi_aula_p1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lndsilva/restapi_aula_p1.git"
+  },
+  "keywords": [],
+  "author": "lndsilva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lndsilva/restapi_aula_p1/issues"
+  },
+  "homepage": "https://github.com/lndsilva/restapi_aula_p1#readme",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
